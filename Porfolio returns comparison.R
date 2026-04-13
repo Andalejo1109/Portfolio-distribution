@@ -1,3 +1,7 @@
+Install.packages("ggplot2")
+Install.packages("tidyr")
+Install.packages("scales")
+
 library(ggplot2)
 library(tidyr)
 library(scales)
