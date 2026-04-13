@@ -38,3 +38,29 @@ $$FV = PV(1 + r)^n + PMT \left[ \frac{(1 + r)^n - 1}{r} \right]$$
 2. Clona este repositorio:
    ```bash
    git clone [(https://github.com/Andalejo1109/Portfolio-distribution/)]
+   
+3. Instala las dependencias necesarias ejecutando en la consola de R:
+
+R
+install.packages(c("ggplot2", "tidyr", "scales"))
+Ejecuta el script principal simulador_portafolios.R.
+
+## 📊 Resultados y Visualización
+
+El script genera un gráfico de líneas comparativo que ilustra la curva exponencial del capital acumulado mes a mes. Se incluye una línea base de "Total Aportado" ($190,000 USD al final del periodo) para aislar visualmente la ganancia neta generada exclusivamente por el efecto del interés compuesto.
+
+Añadir aquí una captura de pantalla del gráfico generado por R.
+![Gráfico de Simulación](ruta_de_tu_imagen.png)
+
+## ⚠️ Disclaimer
+
+Este repositorio y el código contenido en él tienen fines única y exclusivamente educativos y académicos. 
+
+Los rendimientos históricos utilizados en la simulación no son garantía de resultados futuros. 
+
+La inversión en mercados financieros conlleva riesgos de pérdida de capital. 
+
+Toda decisión de inversión debe basarse en un análisis de riesgo individual.
+
+✒️ Autor
+[Alejandro Rodriguez / andalejo1109] - Data Scientist - [LinkedIn: (https://www.linkedin.com/in/andalejo/)]
