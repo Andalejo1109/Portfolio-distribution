@@ -46,4 +46,71 @@ ggplot(df_long, aes(x = Anio, y = Valor, color = Estrategia)) +
        x = "Años", y = "Capital Acumulado (USD)") +
   theme_minimal() +
   guides(linetype = "none")
+
+###
+###Optimización de la visualización:
+###
+
+# 1. Crear un subset con el último valor de cada estrategia
+puntos_finales <- subset(df_long, Anio == 15)
+
+# 2. Generar el gráfico con las etiquetas finales
+grafico_final <- ggplot(df_long, aes(x = Anio, y = Valor, color = Estrategia)) +
+  
+  # Líneas principales
+  geom_line(aes(linetype = Estrategia == "Total_Invertido"), linewidth = 1.2, alpha = 0.85) +
+  
+  # CAPA NUEVA: Etiquetas de texto al final de las líneas
+  geom_text(
+    data = puntos_finales,
+    aes(label = paste0("$", round(Valor/1000), "k")),
+    hjust = -0.2,            # Mueve el texto a la derecha del punto final
+    vjust = 0.5,             # Centra verticalmente respecto a la línea
+    fontface = "bold",
+    size = 4,
+    show.legend = FALSE      # No incluir la 'a' en la leyenda
+  ) +
+  
+  # Colores y leyenda
+  scale_color_manual(
+    values = c(
+      "Portafolio_1" = "#00b4d8", 
+      "Portafolio_2" = "#f77f00", 
+      "SP500_P3" = "#8338ec", 
+      "Total_Invertido" = "#343a40"
+    ),
+    labels = c("Portafolio 1 (14.64%)", "Portafolio 2 (14.24%)", "S&P 500 (12.00%)", "Capital Aportado")
+  ) +
+  
+  # Ajuste del Eje Y (Miles)
+  scale_y_continuous(labels = dollar_format(scale = 1/1000, suffix = "k")) +
+  
+  # Ajuste del Eje X: Agregamos un 15% de espacio extra a la derecha para las etiquetas
+  scale_x_continuous(
+    breaks = seq(0, 15, by = 3), 
+    expand = expansion(mult = c(0.02, 0.15)) 
+  ) +
+  
+  # Títulos y Estética Profesional
+  labs(
+    title = "Crecimiento Proyectado: Estrategias Propias vs. S&P 500",
+    subtitle = "Valores finales tras 15 años de aportes mensuales ($1,000/mes)",
+    x = "Años",
+    y = "Valor Acumulado (Miles de USD)",
+    caption = "Ejercicio académico. Fuente: Datos históricos promedio 2021-2025."
+  ) +
+  
+  theme_minimal(base_size = 14) +
+  theme(
+    plot.title = element_text(face = "bold", size = 18, color = "#2b2d42"),
+    plot.subtitle = element_text(size = 12, color = "#6c757d", margin = margin(b = 20)),
+    panel.grid.minor = element_blank(),
+    legend.position = "bottom",
+    legend.title = element_blank(),
+    plot.margin = margin(20, 20, 20, 20)
+  ) +
+  guides(linetype = "none")
+
+# Mostrar resultado
+print(grafico_final)
   
