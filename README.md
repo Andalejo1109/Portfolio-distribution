@@ -86,8 +86,8 @@ Ejecuta el script principal simulador_portafolios.R.
 
 El script genera un gráfico de líneas comparativo que ilustra la curva exponencial del capital acumulado mes a mes. Se incluye una línea base de "Total Aportado" ($190,000 USD al final del periodo) para aislar visualmente la ganancia neta generada exclusivamente por el efecto del interés compuesto.
 
-Añadir aquí una captura de pantalla del gráfico generado por R.
-![Gráfico de Simulación](ruta_de_tu_imagen.png)
+Captura de pantalla del gráfico generado por R.
+![Gráfico de Simulación](https://github.com/Andalejo1109/Portfolio-distribution/blob/main/Plot2.jpg)
 
 ## ⚠️ Disclaimer
 
