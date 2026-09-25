@@ -1,10 +1,16 @@
 # Portfolio-distribution
 
+[![eToro](https://img.shields.io/badge/eToro-@Andalejo1109-00B289?style=flat-square)](https://etoro.tw/4lkmjxn)
+[![BullAware](https://img.shields.io/badge/BullAware-Sharpe_1.30-1f6feb?style=flat-square)](https://bullaware.com/etoro/Andalejo1109)
+[![Web](https://img.shields.io/badge/Web-tesis_p%C3%BAblica-0B0E14?style=flat-square)](https://andalejo1109.github.io/#tesis)
+
 Comparación de resultados de portafolio a partir del rendimiento anual de los últimos 5 años.
 
 # Simulador de interés compuesto y DCA: portafolios vs S&P 500
 
 Ejercicio académico de ciencia de datos aplicado a finanzas personales. Modela el impacto a largo plazo del interés compuesto y del *dollar-cost averaging* (DCA) comparando estructuras de portafolio frente al rendimiento histórico aproximado del mercado.
+
+La tesis en vivo (misma familia de ETFs, sin apalancamiento) está en [eToro @Andalejo1109](https://etoro.tw/4lkmjxn). Métricas independientes: [BullAware](https://bullaware.com/etoro/Andalejo1109).
 
 ## Objetivo
 
@@ -94,7 +100,9 @@ Fines educativos. Los rendimientos históricos no garantizan resultados futuros.
 
 ## Autor
 
-Alejandro Rodríguez / andalejo1109 — data scientist.
+**Andrés Alejandro Rodríguez Lozano (@Andalejo1109)** — Data Scientist & eToro Popular Investor.
 
+- Web: [andalejo1109.github.io](https://andalejo1109.github.io/)
+- eToro: [@Andalejo1109](https://etoro.tw/4lkmjxn)
+- BullAware: [fact sheet](https://bullaware.com/etoro/Andalejo1109)
 - LinkedIn: [linkedin.com/in/andalejo](https://www.linkedin.com/in/andalejo/)
-- Perfil en eToro: [@Andalejo1109](https://etoro.tw/4lkmjxn)
