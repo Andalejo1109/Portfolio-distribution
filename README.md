@@ -15,7 +15,7 @@ Andrés Alejandro Rodríguez Lozano, economista y científico de datos en Bogot�
 Risk score 4. 100% renta variable, 0% apalancamiento. En un año tipo 2022 el mix puede caer ~20%.
 
 ### ¿Cómo copiar el portafolio en eToro y cuál es el horizonte recomendado?
-Se puede empezar con US$200. La tesis es el DCA mensual: US$100, US$200 o más, hacia US$10.000 copiados. Copiar operaciones abiertas. Horizonte 3+ años. No es asesoría.
+Se puede empezar con US$200. La tesis es el DCA mensual: US$100, US$200 o más. US$10.000 copiados es una meta de largo plazo, no un requisito ni una promesa. Copiar operaciones abiertas. Horizonte 3+ años. No es asesoría.
 
 Texto completo: [andalejo1109.github.io/faq.html](https://andalejo1109.github.io/faq.html)
 
